@@ -20,4 +20,23 @@ function createArray(startNum, endNum){
     }
 }
 
-// Given and integer x, return true if x is palindrome, and false otherwise.
+// Factorial.
+// Without Recursion
+// function fib(n){
+//     let arr = [0, 1];
+//     for(let i = 2; i <= n; i++){
+//         arr.push(arr[i - 2] + arr[i - 1]);
+//     };
+//     return arr[n];
+// };
+
+function fib(n){
+    if(n <= 1) return n;
+    return fib(n - 1) + fib(n - 2)
+}
+
+// Reverse a string
+function reverse(string){
+    if(string === "") return "";
+    return reverse(string.substr(1)) + string.charAt(0);
+};
